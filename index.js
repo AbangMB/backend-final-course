@@ -21,11 +21,13 @@ app.use(urlLogger);
 app.use(express.static("./public")); 
 
 // KONFIGURASI API ROUTER
-const {authRouter, userRouter, cartRouter} = require("./router");
+const {authRouter, userRouter, cartRouter, ratingRouter, portfolioRouter} = require("./router");
 
 app.use("/auth", authRouter);
 app.use("/user", userRouter);
 app.use("/cart", cartRouter);
+app.use("/ratings", ratingRouter);
+app.use("/portfolios", portfolioRouter);
 
 // BIKIN LANDING PAGE API
 app.get("/", (req, res) => {
