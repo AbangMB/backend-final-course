@@ -3,6 +3,7 @@ const userRouter = require("./userRouter");
 const cartRouter = require("./cartRouter");
 const ratingRouter = require("./ratingRouter");
 const portfolioRouter = require("./portfolioRouter");
+const courseRouter = require("./courseRouter");
 
 module.exports = {
   authRouter,
@@ -10,4 +11,5 @@ module.exports = {
   cartRouter,
   ratingRouter,
   portfolioRouter,
+  courseRouter,
 };
